@@ -28,7 +28,10 @@ super + Escape
 #Lock Screen
 alt + shift + x
     betterlockscreen -l dim
-
+    
+#Take a Screenshot
+Print
+	scrot
 
 #
 # bspwm hotkeys
