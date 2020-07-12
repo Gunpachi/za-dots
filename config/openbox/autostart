@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Autostart Apps
+	xset +fp ~/.fonts/misc/
+	xset b off
+	xset r rate 250 25
+	xbacklight -set 5
+	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+	redshift &
+	exec dbus-run-session thunar -d &
+	picom --corner-radius 10 &
+	dunst  -config ~/.config/dunst/dunstrc -geometry "300x60-28+56"  &
+
+# Panel
+	~/.config/polybar/launch.sh
+	#tint2 &
+
+#Wallpaper
+	nitrogen --restore &
+
